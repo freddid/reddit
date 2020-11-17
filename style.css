@@ -73,4 +73,7 @@ box-sizing: border-box;
   color: #ffffff;
 }
 
+.delete{
+  transform: scale(0);
+}
 
