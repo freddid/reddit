@@ -26,6 +26,9 @@
   transition: 0.5s;
   opacity: 0;
 }
+.none{
+  display: none;
+}
 .gallows__keyboard {
   display: flex;
   flex-direction: column;
