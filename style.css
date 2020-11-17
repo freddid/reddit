@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -6,6 +7,19 @@
   -ms-user-select: none;
   user-select: none;
 }
+=======
+*{
+    magring: 0;
+    padding: 0;
+}
+
+body {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+>>>>>>> 369779d2e54ea64a03f890bc57e5bd0f857e9d61
 .container {
   width: 100%;
   display: flex;
@@ -73,6 +87,7 @@
   color: #ffffff;
 }
 
-.delete {
+.delete{
   transform: scale(0);
 }
+
