@@ -1,6 +1,7 @@
 let words = ["НАСВАЙ", "ВЕЛОСИПЕД", "ГОНДЖУБАС"];
 let letters = document.querySelectorAll(".letter");
 let wordHTML = document.querySelectorAll(".letter-cont");
+let countMistakes
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -20,6 +21,8 @@ document.querySelectorAll(".key").forEach((element) => {
       if (item.textContent === e.target.textContent) {
         e.target.classList.add("delete");
         item.style.opacity = "1";
+      }else{
+        countMistakes++
       }
     });
   });
