@@ -15,15 +15,20 @@ window.onload = () => {
     letters[i].textContent = word[i]
   }
 };
+let countMistakes = 0
 document.querySelectorAll(".key").forEach((element) => {
   element.addEventListener("click", function (e) {
-    letters.forEach((item) => {
-      if (item.textContent === e.target.textContent) {
-        e.target.classList.add("delete");
-        item.style.opacity = "1";
-      }else{
-        countMistakes++
+    if (b.includes(e.target.textContent)) {
+      console.log(b.includes(e.target.textContent));
+      e.target.classList.add("delete");
+      for (let i in b) {
+        if (b[i] === e.target.textContent) {
+          letters[i].style.opacity = "1";
+        }
       }
-    });
+    } else {
+      e.target.classList.add("vibration");
+      countMistakes++
+    }
   });
 });
