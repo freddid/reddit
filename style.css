@@ -1,22 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-* {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-=======
-*{
-    magring: 0;
-    padding: 0;
-=======
 * {
   margin: 0;
   padding: 0;
->>>>>>> origin/animation
 }
 
 body {
@@ -25,7 +9,6 @@ body {
   box-sizing: border-box;
 }
 
->>>>>>> 369779d2e54ea64a03f890bc57e5bd0f857e9d61
 .container {
   width: 100%;
   display: flex;
@@ -41,10 +24,13 @@ body {
   font-weight: bold;
   letter-spacing: 20px;
   font-size: 62px;
+  flex-flow: column;
 }
 
 .word {
   display: flex;
+  opacity: 0;
+  transition: .9s;
 }
 
 .letter-cont {
@@ -58,18 +44,14 @@ body {
   transition: 0.5s;
   opacity: 0;
 }
-<<<<<<< HEAD
-.none {
-  display: none;
-}
-=======
 
->>>>>>> origin/animation
 .gallows__keyboard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  transition: .9s;
 }
 
 .line {
@@ -103,11 +85,6 @@ body {
   /* animation: tremor 0.5s ease-in 1 alternate; */
 }
 
-<<<<<<< HEAD
-.delete{
-  transform: scale(0);
-}
-=======
 .delete {
   transform: scale(0);
 }
@@ -116,6 +93,12 @@ body {
   animation: vibration 0.5s ease-in 1 alternate;
   transform: scale(0);
 }
+.none{
+  display: none;
+}
+
+
+
 
 @keyframes vibration {
 
@@ -152,7 +135,6 @@ body {
     transform: translateX(-5px);
 
     transform: scale(0);
->>>>>>> origin/animation
 
   }
 }
